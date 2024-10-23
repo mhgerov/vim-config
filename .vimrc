@@ -6,6 +6,7 @@ call vundle#begin('~/vimfiles/bundle')
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vim-airline/vim-airline'
+Plugin 'morhetz/gruvbox'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -21,3 +22,10 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" required for gruvbox
+autocmd vimenter * ++nested colorscheme gruvbox
+set background=dark
+
+" http://vimcasts.org/episodes/show-invisibles/
+set listchars=tab:▸\ ,eol:¬,space:.

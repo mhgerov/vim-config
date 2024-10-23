@@ -28,4 +28,5 @@ autocmd vimenter * ++nested colorscheme gruvbox
 set background=dark
 
 " http://vimcasts.org/episodes/show-invisibles/
+nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬,space:.
